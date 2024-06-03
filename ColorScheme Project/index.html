@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="index.css">
+        <title> Color Scheme Generator </title>
+    </head>
+    <body>
+        <h1> Generate your Color Scheme!</h1>
+        <div class="container">
+                <label for="color-box" class="box"></label>
+                <input type="color" id="color-box">
+            <div>                
+                <label for="select" class="pick"></label>
+                <select name="select" id="select">
+                    <option value="monochrome">monochrome</option>
+                    <option value="monochrome-dark">monochrome-dark</option>
+                    <option value="monochrome-light">monochrome-light</option>
+                    <option value="analogic">analogic</option>
+                    <option value="analogic-complement">analogic-complement</option>
+                    <option value="triad">triad</option>
+                    <option value="quad">quad</option>                         
+                </select>
+                <button id="getScheme" class="btn"> Get color scheme</button> 
+            </div>
+        </div>            
+        <div id="main"></div>
+            <div id="snackbar" class="alert">
+                <span>Hex code copied</span>
+                <span class="close-btn" onclick="this.parentElement.style.visibility='hidden';">&times;</span>
+            </div>
+            <script src="index.js"></script>
+    </body>
+</html>
